@@ -119,7 +119,7 @@ const About = () => {
                                             {profile.content}
                                         </p>
                                     </div>
-                                )}t 
+                                )}
                             </div>
                         ))}
                     </div>
