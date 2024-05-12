@@ -39,7 +39,7 @@ const profiles = [
 
                                         Throughout Lola's journey in television, she has acquired a profound understanding of production intricacies, from creative aspects to operational requirements. Having worked at various levels within the industry, Lola possesses valuable insights into the diverse needs of production staff, ensuring seamless and efficient workflows.
 
-                                        An exceptional ability to build rapport with production teams stands out as one of Lola's key strengths, fostering a collaborative and innovative work environment. She has had the privilege of leading and collaborating with notable screen personalities such as Israel Laryea, Evans Mensah, Nana Aba Anamoah, Ama K. Abrebese, and Sandra Ankobiah, showcasing exemplary leadership skills and the capacity to work alongside industry stars.
+                                        An exceptional ability to build rapport with production teams stands out as one of Lola's key strengths, fostering a collaborative and innovative work environment. She has had the privilege of leading and collaborating with notable screen personalities such as Israel Laryea, Alfred Ocansey, Nana Aba Anamoah, Ama K. Abrebese,Berla Mundi, Giovanni Caleb, Sika Osei Douglas, Anita Akuffo and Johnny Hughes, showcasing exemplary leadership skills and the capacity to work alongside industry stars.
 
                                         Thriving under pressure, Lola maintains an unwavering commitment to meeting deadlines with poise and precision. Her enthusiasm for taking on new challenges extends to a keen interest in climate change, reflected in her role as the project director of Dziko CCJ. This commitment to addressing environmental issues aligns with Lola's broader goal of contributing to projects that empower and uplift communities.
 
@@ -99,7 +99,30 @@ const profiles = [
         name: 'Andy Nyarko',
         role: 'Finance Manager',
         image: Image8,
-        content: `Andy Nyarko is a finance manager with expertise in financial management, budgeting, and strategic planning.`
+        content: `Andrews Kwaku Nyarko is a dynamic individual who seamlessly integrates his roles
+as a financial analyst, climate activist, and community leader. With years of
+experience in the public sector and international organization, particularly within the
+Ministry of Transport - Ghana and The Economic Community of West African States
+(ECOWAS), Andrews has improved his expertise in financial management while
+simultaneously cultivating a passion for environmental advocacy. Andrews has been
+able to further apply his financial expertise in a regional context, contributing to the
+economic development and cooperation within West Africa
+As a Freelance Consultant, Andrews applies his knowledge and skills in both finance
+and environmental sustainability to provide professional services to clients. His
+educational background is impressive, holding a Bachelor's Degree in Banking and
+Finance and a Master’s Degree in Business Administration with a specialization in
+Accounting and Finance from the esteemed University of Professional Studies, Accra.
+His academic achievements, including being recognized as the overall best
+Graduating Graduate Student and the best student in the Accounting and Finance
+Faculty for the year 2018, underscore his dedication to excellence.
+Beyond his professional and academic pursuits, Andrews is deeply committed to
+serving his community. He channels his passion for education by actively contributing
+to the academic development of children in his community. Additionally, his
+involvement with YALI RLC, West Africa as a fellow highlights his dedication to
+promoting good governance, civic engagement and entrepreneurship.
+Andrews Kwaku Nyarko epitomises a multidimensional professional. His diverse
+experiences and steady dedication make him a valuable asset to both his professional
+endeavors and the broader community.`
     },
     {
         id: 9,
