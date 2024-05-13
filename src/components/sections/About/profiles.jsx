@@ -39,11 +39,11 @@ const profiles = [
 
                                         Throughout Lola's journey in television, she has acquired a profound understanding of production intricacies, from creative aspects to operational requirements. Having worked at various levels within the industry, Lola possesses valuable insights into the diverse needs of production staff, ensuring seamless and efficient workflows.
 
-                                        An exceptional ability to build rapport with production teams stands out as one of Lola's key strengths, fostering a collaborative and innovative work environment. She has had the privilege of leading and collaborating with notable screen personalities such as Israel Laryea, Alfred Ocansey, Nana Aba Anamoah, Ama K. Abrebese,Berla Mundi, Giovanni Caleb, Sika Osei Douglas, Anita Akuffo and Johnny Hughes, showcasing exemplary leadership skills and the capacity to work alongside industry stars.
+                                        An exceptional ability to build rapport with production teams stands out as one of Lola's key strengths, fostering a collaborative and innovative work environment. She has had the privilege of leading and collaborating with notable screen personalities such as Israel Laryea, Alfred Ocansey, Nana Aba Anamoah, Ama K. Abrebese, Berla Mundi, Giovanni Caleb, Sika Osei Douglas, Anita Akuffo and Johnny Hughes, showcasing exemplary leadership skills and the capacity to work alongside industry stars.
 
-                                        Thriving under pressure, Lola maintains an unwavering commitment to meeting deadlines with poise and precision. Her enthusiasm for taking on new challenges extends to a keen interest in climate change, reflected in her role as the project director of Dziko CCJ. This commitment to addressing environmental issues aligns with Lola's broader goal of contributing to projects that empower and uplift communities.
+                                        Thriving under pressure, Lola maintains an unwavering commitment to meeting deadlines with poise and precision. Her enthusiasm for taking on new challenges extends to a keen interest in climate change, reflected in her role as the Project Director of Dziko CCJ. This commitment to addressing environmental issues aligns with Lola's broader goal of contributing to projects that empower and uplift communities.
 
-                                        With a background in television production, creative problem-solving, leadership, and a commitment to excellence, Lola Senaya is well-prepared to make a meaningful impact in both the television industry and the realm of community development and climate change advocacy.`
+                                        With a background in Television Production, creative problem-solving, leadership, and a commitment to excellence, Lola Senaya is well-prepared to make a meaningful impact in both the television industry and the realm of community development and climate change advocacy.`
     },
     {
         id: 4,
@@ -74,7 +74,7 @@ const profiles = [
         name: 'Abigail Addoley Addo',
         role: 'Creative Director',
         image: Image5,
-        content: ` Abigail Addoley Addo is a Video Editor and a Graphic Designer with 10 years experience in Film editing, documentary and still Graphic Designing.She currently works with Tv3 Ghana Limited a subsidiary of Media General as a Programs Editor. She has a Bachelor of Arts in Visual Communication from African University College of Communications (AUCC). she has cultivated a deep understanding of the visual storytelling and communication strategies essential in the contemporary media landscape.`
+        content: ` Abigail Addoley Addo is a Video Editor and a Graphic Designer with 10 years experience in Film editing, documentary and still Graphic Designing. She currently works with Tv3 Ghana Limited a subsidiary of Media General as a Programs Editor. She has a Bachelor of Arts in Visual Communication from African University College of Communications (AUCC). She has cultivated a deep understanding of the visual storytelling and communication strategies essential in the contemporary media landscape.`
     },
     {
         id: 6,
@@ -96,8 +96,8 @@ const profiles = [
     },
     {
         id: 8,
-        name: 'Andy Nyarko',
-        role: 'Finance Manager',
+        name: 'Andrews Kwaku Nyarko',
+        role: 'Finance and Policy Manager',
         image: Image8,
         content: `Andrews Kwaku Nyarko is a dynamic individual who seamlessly integrates his roles
 as a financial analyst, climate activist, and community leader. With years of
@@ -106,8 +106,8 @@ Ministry of Transport - Ghana and The Economic Community of West African States
 (ECOWAS), Andrews has improved his expertise in financial management while
 simultaneously cultivating a passion for environmental advocacy. Andrews has been
 able to further apply his financial expertise in a regional context, contributing to the
-economic development and cooperation within West Africa
-As a Freelance Consultant, Andrews applies his knowledge and skills in both finance
+economic development and cooperation within West Africa.
+Andrews is also a Freelance Consultant, who applies his knowledge and skills in both finance
 and environmental sustainability to provide professional services to clients. His
 educational background is impressive, holding a Bachelor's Degree in Banking and
 Finance and a Master’s Degree in Business Administration with a specialization in
@@ -129,7 +129,7 @@ endeavors and the broader community.`
         name: 'Fatahiya Musah',
         role: 'Volunteer and Outreach Manager',
         image: Image9,
-        content: `            I am Fatahiya Musah, a dedicated nurse driven by a fervent passion for community development and social impact. Throughout my career, I have championed initiatives aimed at fostering positive change within communities, with a particular focus on advocating for gender equality and social justice.`
+        content: `I am Fatahiya Musah, a dedicated nurse driven by a fervent passion for community development and social impact. Throughout my career, I have championed initiatives aimed at fostering positive change within communities, with a particular focus on advocating for gender equality and social justice.`
     },
     {
         id: 10,
