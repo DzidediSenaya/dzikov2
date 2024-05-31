@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../../navbar/navbar';
 import Footer from '../../footer/footer';
 import earthdayImage from '../../../assets/images/earth day.jpg';
 import earthmonthImage from '../../../assets/images/dziko shirt.jpg';
 import climatecrisisImage from '../../../assets/images/climate crisis.jpg';
 import climateeventImage from '../../../assets/images/1000143203.jpg';
-import { useEffect } from 'react';
+import GGDImage from '../../../assets/images/DZIKO 1.jpg';
+
 const News = () => {
     const newsData = [
         {
@@ -31,21 +32,25 @@ const News = () => {
 
     const eventData = [
         {
+            title: "Green Ghana Day Campaign",
+            date: "2024-05-28",
+            location: "Ghana",
+            description: "On Green Ghana Day, Dziko CCJ is committed to making a positive impact on Ghana's environment through a nationwide tree planting initiative. We're seeking passionate volunteers to join us in planting trees across various locations in Ghana. Here's why you should get involved:\n- Be a part of a critical initiative for a greener and healthier Ghana. \n- Give back to your community through impactful volunteer work.\n- Network with like-minded individuals who share your passion for sustainability.\nBecome a Green Ghana Day Volunteer with Dziko CCJ! Join us on 7th June, 2024 to plant trees nationwide.",
+            image: GGDImage,
+        },
+        {
             title: "Climate Action Heroes Challenge",
             date: "2024-05-10",
             location: "Ghana",
             description: "As part of our commitment to 'Advocacy and Leadership,' we're empowering communities across Ghana to take action on climate change. We invite you to join us as we seek 500 volunteers to become advocates for climate action and leaders within their communities.",
             image: climateeventImage,
         }
-
-
     ];
 
     useEffect(() => {
         // Scroll to the top of the page when the component mounts
         window.scrollTo(0, 0);
     }, []);
-
 
     return (
         <div>
@@ -76,12 +81,12 @@ const EventList = ({ eventData }) => {
         <div className="event-list mx-5">
             {eventData.map((event, index) => (
                 <div key={index} className="event-card bg-indigo-100 p-4 rounded-lg mb-4 flex flex-col sm:flex-row">
-                    <img src={event.image} alt={event.title} className="w-72 object-cover rounded-lg mr-4 mb-4 sm:mb-0 sm:mr-8" />
+                    <img src={event.image} alt={event.title} className="w-72 object-cover rounded-lg mr-16 mb-4 sm:mb-0 sm:mr-8" />
                     <div className="event-content">
                         <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
                         <p className="text-sm text-gray-600 mb-2">Date Posted: {new Date(event.date).toLocaleDateString()}</p>
                         <p className="text-sm text-gray-600 mb-2">Location: {event.location}</p>
-                        <p className="text-sm text-gray-600 mb-2">{event.description}</p>
+                        <p className="text-sm text-gray-600 mb-2 whitespace-pre-wrap">{event.description}</p>
                     </div>
                 </div>
             ))}

@@ -8,9 +8,9 @@ import image1 from '../../../assets/images/image1.jpg';
 import image2 from '../../../assets/images/image2.jpg';
 import image3 from '../../../assets/images/image3.jpg';
 import { FaInfoCircle, FaHandsHelping, FaEnvelope } from 'react-icons/fa';
-import image4 from '../../../assets/images/earth day.jpg';
-import image5 from '../../../assets/images/dziko shirt.jpg';
-import image6 from '../../../assets/images/1000143216.jpg';
+import image5 from '../../../assets/images/earth day.jpg';
+import image6 from '../../../assets/images/dziko shirt.jpg';
+import image4 from '../../../assets/images/IMG-20240530-WA0010.jpg';
 
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
   }, [autoRotate]); // Depend on autoRotate state
 
   const images = [image1, image2, image3, image4, image5, image6]; 
-  const newsTitles = ["1", "2", "3", "Earth Day Announcement", "Earth Month Campaign", "Climate Crisis Awareness"];
+  const newsTitles = ["1", "2", "3", "Green Ghana Day Campaign","Earth Day Announcement", "Earth Month Campaign"];
 
   const changeImage = (index) => {
     setCurrentImage(index);
@@ -126,8 +126,8 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-indigo-800 mb-4 uppercase">Discover Who We Are</h2>
         </div>
         <p className="text-lg  text-gray-700 mb-8">
-          <p>Our vision aligns closely with the Loss and Damage objectives, </p>
-          <p>and we are committed to excellence and accountability in implementation.</p>
+          <p>We empower young people to take charge in mitigating the effects of climate change, </p>
+          <p>and are committed to excellence and accountability in implementation.</p>
           <p>Together, we aim to improve community resilience, health, and quality of life, </p>
           <p>promoting sustainability.</p>
         </p>
