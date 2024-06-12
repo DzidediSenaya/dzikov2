@@ -1,13 +1,13 @@
-import Image1 from '../../../assets/images/gigi.jpg';
-import Image2 from '../../../assets/images/nick.jpg';
-import Image3 from '../../../assets/images/Lola.jpg';
-import Image4 from '../../../assets/images/Godwin.jpg';
-import Image5 from '../../../assets/images/Naa.jpg';
-import Image6 from '../../../assets/images/Henry.jpg';
-import Image7 from '../../../assets/images/Freda.jpg';
-import Image8 from '../../../assets/images/Andy.jpg';
-import Image9 from '../../../assets/images/Fata.jpg';
-import Image10 from '../../../assets/images/Sam.jpg';
+import Image1 from '../../../assets/images/Gigi.webp';
+import Image2 from '../../../assets/images/Nick.webp';
+import Image3 from '../../../assets/images/Lola.webp';
+import Image4 from '../../../assets/images/Godwin.webp';
+import Image5 from '../../../assets/images/Naa.webp';
+import Image6 from '../../../assets/images/Henry.webp';
+import Image7 from '../../../assets/images/Freda.webp';
+import Image8 from '../../../assets/images/Andy.webp';
+import Image9 from '../../../assets/images/Fata.webp';
+import Image10 from '../../../assets/images/Sam.webp';
 
 const profiles = [
     {

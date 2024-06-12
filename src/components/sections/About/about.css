@@ -1,0 +1,39 @@
+.partners-container {
+    display: flex;
+    align-items: center;
+}
+
+.partner-logo {
+    width: 100px;
+    height: auto;
+    margin: 0 10px; /* Adjust margin for spacing */
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+}
+
+.partner-logo1 {
+    width: 150px;
+    height: auto;
+    margin: 0 10px; /* Adjust margin for spacing */
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner-logo1:hover {
+    transform: scale(1.1);
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .partners-container {
+        flex-direction: column; /* Change to column layout on smaller screens */
+        align-items: center; /* Center align the logos */
+    }
+
+    .partner-logo,
+    .partner-logo1 {
+        margin: 10px 0; /* Adjust margin for spacing between logos */
+    }
+}

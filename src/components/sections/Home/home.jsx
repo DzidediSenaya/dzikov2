@@ -4,19 +4,21 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Navbar from '../../navbar/navbar';
 import Footer from '../../footer/footer';
-import image1 from '../../../assets/images/image1.jpg';
-import image2 from '../../../assets/images/image2.jpg';
-import image3 from '../../../assets/images/image3.jpg';
+import Spinner from '../../spinner/spinner';
+import image1 from '../../../assets/images/image1.webp';
+import image2 from '../../../assets/images/1717936604753-ggd4.webp';
+import image3 from '../../../assets/images/1717936605183-ggd2.webp';
 import { FaInfoCircle, FaHandsHelping, FaEnvelope } from 'react-icons/fa';
-import image5 from '../../../assets/images/earth day.jpg';
-import image6 from '../../../assets/images/dziko shirt.jpg';
-import image4 from '../../../assets/images/IMG-20240530-WA0010.jpg';
+import image5 from '../../../assets/images/earth day.webp';
+import image6 from '../../../assets/images/dziko shirt.webp';
+import image4 from '../../../assets/images/IMG-20240530-WA0010.webp';
 
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(0);
   const [autoRotate, setAutoRotate] = useState(true); // State to control automatic rotation
   const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
@@ -90,6 +92,16 @@ export default function Home() {
     // You can define your navigation logic here
     console.log(`Clicked on news card with id ${id}`);
   };
+
+  
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(timer);
+}, []);
+
+if (loading) {
+    return <Spinner />;
+};
 
   return (
     <div>

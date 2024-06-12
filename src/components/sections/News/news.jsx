@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../../navbar/navbar';
 import Footer from '../../footer/footer';
-import earthdayImage from '../../../assets/images/earth day.jpg';
-import earthmonthImage from '../../../assets/images/dziko shirt.jpg';
-import climatecrisisImage from '../../../assets/images/climate crisis.jpg';
-import climateeventImage from '../../../assets/images/1000143203.jpg';
-import GGDImage from '../../../assets/images/DZIKO 1.jpg';
+import earthdayImage from '../../../assets/images/earth day.webp'; 
+import earthmonthImage from '../../../assets/images/dziko shirt.webp'; 
+import climatecrisisImage from '../../../assets/images/1000143174.webp'; 
+import climateeventImage from '../../../assets/images/1000143128.webp'; 
+import GGDImage from '../../../assets/images/DZIKO 1.webp'; 
+import Spinner from '../../spinner/spinner';
 
 const News = () => {
     const newsData = [
@@ -47,10 +48,19 @@ const News = () => {
         }
     ];
 
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
         // Scroll to the top of the page when the component mounts
         window.scrollTo(0, 0);
+        const timer = setTimeout(() => setLoading(false), 1000);
+        return () => clearTimeout(timer);
     }, []);
+
+    // Show spinner while loading
+    if (loading) {
+        return <Spinner />;
+    }
 
     return (
         <div>
@@ -62,7 +72,12 @@ const News = () => {
             <div className="news-list mx-5">
                 {newsData.map((article, index) => (
                     <div key={index} className={`news-card bg-white p-4 rounded-lg mb-4 flex flex-col sm:flex-row`}>
-                        <img src={article.image} alt={article.title} className="w-72 object-cover rounded-lg mr-4 mb-4 sm:mb-0 sm:mr-8" />
+                        <img
+                            src={article.image}
+                            alt={article.title}
+                            className="w-72 object-cover rounded-lg mr-4 mb-4 sm:mb-0 sm:mr-8"
+                            loading="lazy" // Lazy loading added here
+                        />
                         <div className="news-content">
                             <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
                             <p className="text-sm text-gray-600 mb-2">Date: {new Date(article.date).toLocaleDateString()}</p>
@@ -81,12 +96,18 @@ const EventList = ({ eventData }) => {
         <div className="event-list mx-5">
             {eventData.map((event, index) => (
                 <div key={index} className="event-card bg-indigo-100 p-4 rounded-lg mb-4 flex flex-col sm:flex-row">
-                    <img src={event.image} alt={event.title} className="w-72 object-cover rounded-lg mr-16 mb-4 sm:mb-0 sm:mr-8" />
+                    <img
+                        src={event.image}
+                        alt={event.title}
+                        className="w-72 object-cover rounded-lg mr-16 mb-4 sm:mb-0 sm:mr-8"
+                        loading="lazy" // Lazy loading added here
+                    />
                     <div className="event-content">
                         <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
                         <p className="text-sm text-gray-600 mb-2">Date Posted: {new Date(event.date).toLocaleDateString()}</p>
                         <p className="text-sm text-gray-600 mb-2">Location: {event.location}</p>
-                        <p className="text-sm text-gray-600 mb-2 whitespace-pre-wrap">{event.description}</p>
+                        <p className="text-sm text-gray-600 mb-2 whitespace-pre-wrap">{event.description
+                        }</p>
                     </div>
                 </div>
             ))}

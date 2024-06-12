@@ -3,13 +3,17 @@
     /* Adjust based on your navbar height */
 }
 
-
 .gallery-container {
     position: relative;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* Ensures buttons don't overflow */
+}
+
+.gallery-img {
+    max-width: 100%; /* Ensures image doesn't overflow container */
 }
 
 .gallery-btn {
@@ -25,44 +29,36 @@
 }
 
 .gallery-btn.prev {
-    left: -7%;
+    left: 10px; /* Adjust as needed */
     top: 50%;
     transform: translateY(-50%);
 }
 
 .gallery-btn.next {
-    right: -7%;
+    right: 10px; /* Adjust as needed */
     top: 50%;
     transform: translateY(-50%);
 }
 
-.nav-text {
-    position: absolute;
-    color: white;
-    font-size: 14px;
-    bottom: -25px;
-}
-
-
-
 /* Media queries for small devices */
-
 @media screen and (max-width: 1024px) {
-
-    .gallery-btn {
-        margin: 0;
-        /* Remove margins for small devices */
-    }
-
-    .gallery-btn.prev {
-        left: 0%;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
+    .gallery-btn.prev,
     .gallery-btn.next {
-        right: 0%;
-        top: 50%;
-        transform: translateY(-50%);
+        font-size: 18px; /* Adjust button size for smaller screens */
+        padding: 8px; /* Adjust button padding for smaller screens */
     }
 }
+
+.video-container {
+    width: 100%;
+    max-width: 800px; /* Adjust this value as needed */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .video-container {
+      max-width: 90%;
+    }
+  }
+  

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import './footer.css';
 
 const Footer = () => {
@@ -24,7 +24,10 @@ const Footer = () => {
                         <FaFacebook size={24} />
                     </a>
                     <a href="https://www.linkedin.com/company/100894893" target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-200">
-                        <FaLinkedin size={24} />
+                        <FaLinkedin size={28} />
+                    </a>
+                    <a href=" https://www.youtube.com/@DzikoCCJ" target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-200 ml-4">
+                        <FaYoutube size={28} />
                     </a>
                 </div>
                 {/* Contact Section */}

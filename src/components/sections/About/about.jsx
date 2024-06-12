@@ -3,26 +3,27 @@ import Navbar from '../../navbar/navbar';
 import Footer from '../../footer/footer';
 import { FaRegLightbulb, FaEye, FaUsers, FaHandshake, FaUserFriends, FaGlobe } from 'react-icons/fa';
 import profiles from './profiles';
+import Spinner from '../../spinner/spinner';
+import DPGImage from '../../../assets/images/DPG.webp';
+import LebeneImage from '../../../assets/images/Lebene.webp';
+import './about.css';
 
 const About = () => {
     const [showFullProfile, setShowFullProfile] = useState(Array(profiles.length).fill(false));
     const [currentSection, setCurrentSection] = useState('');
+    const [loading, setLoading] = useState(true);
 
     const toggleFullProfile = (index) => {
         setShowFullProfile(prevShowFullProfile => {
-            const updatedShowFullProfile = [...prevShowFullProfile]; // Create a copy of the current state
-            updatedShowFullProfile[index] = !updatedShowFullProfile[index]; // Toggle the visibility of the profile at the specified index
+            const updatedShowFullProfile = [...prevShowFullProfile];
+            updatedShowFullProfile[index] = !updatedShowFullProfile[index];
             return updatedShowFullProfile;
         });
     };
 
-
-
     useEffect(() => {
-        // Scroll to the top of the page when the component mounts
         window.scrollTo(0, 0);
 
-        // Event listener for scrolling
         const handleScroll = () => {
             const sections = document.querySelectorAll('section');
             sections.forEach(section => {
@@ -58,6 +59,15 @@ const About = () => {
 
         return () => { };
     }, [currentSection]);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 1000);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return <Spinner />;
+    }
 
     return (
         <div>
@@ -104,12 +114,17 @@ const About = () => {
             <section id="team" className="max-w-4xl mx-auto px-4 py-8">
                 <div className="mb-8">
                     <h2 className="text-2xl font-bold mb-2 text-indigo-800">Meet Our Expert Team: Driven Professionals Crafting Sustainable Solutions</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> 
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {profiles.map((profile, index) => (
                             <div key={profile.id} className="bg-white p-3 rounded-lg shadow flex flex-col items-center">
                                 <h2 className="text-xl font-bold mb-4 mt-1 text-indigo-800">{profile.name}</h2>
                                 <p className="mb-2 text-indigo-800 italic font-bold">{profile.role}</p>
-                                <img className="w-full h-auto rounded-md mb-4" src={profile.image} alt={profile.name} style={{ maxWidth: '70%' }} />
+                                <img
+                                    className="w-full h-auto rounded-md mb-4"
+                                    src={profile.image}
+                                    alt={profile.name}
+                                    style={{ maxWidth: '70%' }}
+                                />
                                 <button onClick={() => toggleFullProfile(index)} className="bg-indigo-800 hover:bg-indigo-400 text-white px-4 py-2 rounded-md transition duration-300">
                                     {showFullProfile[index] ? 'Hide Full Profile' : 'View Full Profile'}
                                 </button>
@@ -122,6 +137,12 @@ const About = () => {
                                 )}
                             </div>
                         ))}
+                        <div>
+                        <div className="max-w-4xl mx-auto px-4 py-8">
+                        <p id="volunteersCount" className="text-3xl font-bold text-gray-700">100+</p>
+                        <p className="text-lg text-gray-700">Volunteers Nationwide</p>
+                    </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -135,6 +156,11 @@ const About = () => {
                         shared values, leveraging each other's strengths and resources to create positive change.
                     </p>
                 </div>
+                <div className="partners-container">
+    <img className='partner-logo' src={DPGImage} alt="Partner 1" />
+    <img className='partner-logo1' src={LebeneImage} alt="Partner 2" />
+</div>
+
             </section>
 
             <section className="max-w-4xl mx-auto px-4 py-8">

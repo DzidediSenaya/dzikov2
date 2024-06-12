@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import f3 from '../../assets/images/f3.png';
+import f3 from '../../assets/images/f3.webp';
 import { FaHandsHelping } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 

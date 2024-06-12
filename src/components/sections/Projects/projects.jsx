@@ -2,37 +2,33 @@ import React, { useState, useEffect } from 'react';
 import './projects.css';
 import Navbar from '../../navbar/navbar';
 import Footer from '../../footer/footer';
-import attentionGrabberImage1 from '../../../assets/images/ecologo.jpg';
-import attentionGrabberImage2 from '../../../assets/images/ecologo2.jpg';
-import projectImage1 from '../../../assets/images/1000143128.jpg';
-import projectImage2 from '../../../assets/images/1000143168.jpg';
-import projectImage3 from '../../../assets/images/1000143171.jpg'
-import projectImage4 from '../../../assets/images/1000143174.jpg'
-import projectImage5 from '../../../assets/images/IMG_6872-2.jpg'
-import projectImage6 from '../../../assets/images/IMG_6874-2.jpg'
-import projectImage7 from '../../../assets/images/IMG_6876-2.jpg'
-import projectImage9 from '../../../assets/images/IMG_6881-2.jpg'
-import projectImage10 from '../../../assets/images/IMG_6888-2.jpg'
-import projectImage11 from '../../../assets/images/IMG_6996-2.jpg'
-import projectImage12 from '../../../assets/images/1000143195.jpg'
-import projectImage13 from '../../../assets/images/1000143225.jpg'
-import projectImage14 from '../../../assets/images/1000143227.jpg'
-import projectImage15 from '../../../assets/images/1000143234.jpg'
-import projectImage17 from '../../../assets/images/1000143236.jpg'
-import projectImage18 from '../../../assets/images/1000143238.jpg'
-import projectImage19 from '../../../assets/images/1000143244.jpg'
-import projectImage20 from '../../../assets/images/1000143254.jpg'
-import projectImage21 from '../../../assets/images/1000143256.jpg'
-import projectImage22 from '../../../assets/images/1000143188.jpg'
-import projectImage23 from '../../../assets/images/1000143196.jpg'
-import projectImage24 from '../../../assets/images/1000143197.jpg'
-import projectImage25 from '../../../assets/images/1000143203.jpg'
-import projectImage26 from '../../../assets/images/1000143216.jpg'
-import projectImage27 from '../../../assets/images/1000143218.jpg'
-import projectPromo1 from '../../../assets/videos/DZIKO 1.mp4'
-import projectPromo2 from '../../../assets/videos/dziko 2.mp4'
-import projectPromo3 from '../../../assets/videos/VID-20240530-WA0004.mp4'
-
+import YouTube from 'react-youtube';
+import attentionGrabberImage1 from '../../../assets/images/ecologo.webp';
+import attentionGrabberImage2 from '../../../assets/images/ecologo2.webp';
+import projectImage1 from '../../../assets/images/1000143128.webp';
+import projectImage2 from '../../../assets/images/1000143168.webp';
+import projectImage3 from '../../../assets/images/1000143171.webp'
+import projectImage4 from '../../../assets/images/1000143174.webp'
+import projectImage5 from '../../../assets/images/IMG_6872-2.webp'
+import projectImage6 from '../../../assets/images/IMG_6874-2.webp'
+import projectImage7 from '../../../assets/images/IMG_6876-2.webp'
+import projectImage9 from '../../../assets/images/IMG_6881-2.webp'
+import projectImage10 from '../../../assets/images/IMG_6888-2.webp'
+import projectImage11 from '../../../assets/images/IMG_6996-2.webp'
+import projectImage12 from '../../../assets/images/1000143195.webp'
+import projectImage13 from '../../../assets/images/1000143225.webp'
+import projectImage14 from '../../../assets/images/1717936595766-ggd1.webp'
+import projectImage15 from '../../../assets/images/1717936604418-ggd3.webp'
+import projectImage16 from '../../../assets/images/1717936604753-ggd4.webp'
+import projectImage17 from '../../../assets/images/1717936605183-ggd2.webp'
+import projectImage18 from '../../../assets/images/20240607_124510.webp'
+import projectImage19 from '../../../assets/images/20240607_132003.webp'
+import projectImage21 from '../../../assets/images/1000143256.webp'
+import projectImage22 from '../../../assets/images/1000143188.webp'
+import projectImage23 from '../../../assets/images/1000143196.webp'
+import projectImage24 from '../../../assets/images/1000143197.webp'
+import projectImage26 from '../../../assets/images/1000143216.webp'
+import projectImage27 from '../../../assets/images/1000143218.webp'
 
 const Projects = () => {
     const [showHomeImage1, setShowHomeImage1] = useState(true);
@@ -48,6 +44,7 @@ const Projects = () => {
         }, 3000);
         return () => clearInterval(interval);
     }, []);
+
 
     return (
         <div>
@@ -90,14 +87,30 @@ This team is campaigning for sustainable practices such as water conservation to
 
 <p className="mb-12 sm:max-w-50 mx-5 px-0">As we continue on this journey, let us remember the words of Margaret Mead: "Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it's the only thing that ever has." Together, we can create a brighter, greener future for generations to come.</p>
 
-                <h5 className="text-3xl font-bold sm:max-w-50 mx-5 px-04">Project Gallery</h5>  
+                <h5 className="text-3xl font-bold sm:max-w-50 mx-5 px-04">Project Gallery</h5> 
+                </section>
+                <section>
+                <ProjectGallery /> 
             </section>
-            <section>
+            <section className="max-w-3xl mx-auto py-4 sm:max-w-50 mx-5 px-0">
                 <div>
-            <ProjectGallery />
             <h5 className="text-3xl text-center font-bold sm:max-w-50 mx-5 px-04 ">Green Ghana Day Campaign</h5>  
             <GGDProject />
+            <h3 className="text-3xl font-bold mb-4 sm:max-w-50 mx-5 px-04">Celebrating a Successful Tree Planting Campaign</h3>
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">In the spirit of environmental stewardship and community engagement, the Dziko Centre for Climate Justice proudly joined hands with volunteers nationwide to commemorate Green Ghana Day 2024. This annual event, dedicated to reforestation and environmental conservation, saw unprecedented enthusiasm and commitment from individuals across Ghana.</p>
+
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">With a collective vision of fostering a greener and more sustainable future, our team embarked on an ambitious mission: to plant over 10,000 trees nationwide. Armed with our tools and unwavering determination, volunteers from diverse backgrounds converged to contribute to Ghana's reforestation efforts.</p>
+
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">From bustling urban centers to remote communities, the spirit of Green Ghana Day reverberated across the nation. Volunteers, young and old, urban dwellers and rural residents, came together as one cohesive force, united by a common purpose: to replenish our forests, protect our biodiversity, and combat climate change.</p>
+
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">As we reflect on the success of Green Ghana Day 2024, we extend our heartfelt gratitude to every individual who contributed their time, energy, and passion to this noble cause. Your dedication and commitment have left an indelible mark on our environment and inspired countless others to join the fight for a greener Ghana.</p>.
+
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">As we celebrate the achievements of Green Ghana Day, we will not rest on our laurels. Our work is far from over. Together, we will continue to nurture the seeds of change we've planted, cultivating a legacy of environmental stewardship and sustainability for generations to come.</p>
+            <h5 className="text-3xl font-bold sm:max-w-50 mx-5 px-04">Project Gallery</h5> 
             </div>
+            </section>
+            <section>
+                <GGDGallery /> 
             </section>
             <Footer />
         </div>
@@ -114,24 +127,15 @@ const ProjectGallery = () => {
         projectImage5,
         projectImage6,
         projectImage7,
-        projectImage18,
         projectImage9,
         projectImage10,
         projectImage11,
         projectImage12,
         projectImage13,
-        projectImage14,
-        projectImage15,
-        projectImage21,
-        projectImage17,
-        projectImage18,
-        projectImage19,
-        projectImage20,
         projectImage21,
         projectImage22,
         projectImage23,
         projectImage24,
-        projectImage25,
         projectImage26,
         projectImage27,
     ];
@@ -142,7 +146,8 @@ const ProjectGallery = () => {
 
     const prevImage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-    };
+    }
+
     return (
         <div className="py-8 lg:w-3/5 mx-auto"> {/* Set width to 90% on small screens */}
             <div className="gallery-container relative mb-12">
@@ -157,39 +162,85 @@ const ProjectGallery = () => {
     );
 };   
 
+    
+const GGDGallery = () => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const images = [
+        projectImage14,
+        projectImage15,
+        projectImage16,
+        projectImage17,
+        projectImage18,
+        projectImage19
+    ];
+
+    const nextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
+    const prevImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
+return (
+    <div className="py-8 lg:w-3/5 mx-auto"> {/* Set width to 90% on small screens */}
+        <div className="gallery-container relative mb-12">
+            <div />
+            <div className="w-4/5 lg:w-full mx-auto flex items-center justify-between"> {/* Set width to 80% on larger screens */}
+                <button style={{ margin: "0", backgroundColor: "indigo"}} className="gallery-btn prev sm:ml-0" onClick={prevImage}>&#10094;</button>
+                <img className="gallery-img" src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
+                <button style={{ margin: "0", backgroundColor: "indigo" }} className="gallery-btn next sm:mr-0" onClick={nextImage}>&#10095;</button>
+            </div>
+        </div>
+    </div>
+);
+}; 
+
 const GGDProject = () => {
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-    const videos = [projectPromo3, projectPromo2, projectPromo1];
+
+    const videoIds = [
+       "DXanqHluK6o",
+       "-RUOjLO1H6Y",
+        "p9U0NOKETsE",
+        "XB2SdwtPOJo",
+        "lJy-Jahr2go",
+        "6FIj3R1QIEQ",
+        "xzOIXdOu378",
+        "oCYB1Qx287Y",
+        "CI2Doh6cViM",
+        "e_aNo0rW5So",
+    ];
+
+    const opts = {
+        height: '390',
+        width: '640',
+        playerVars: {
+            autoplay: 1,
+        },
+    };
 
     const nextVideo = () => {
-        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
+        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoIds.length);
     };
 
     const prevVideo = () => {
-        setCurrentVideoIndex((prevIndex) => (prevIndex - 1 + videos.length) % videos.length);
+        setCurrentVideoIndex((prevIndex) => (prevIndex - 1 + videoIds.length) % videoIds.length);
     };
 
-    useEffect(() => {
-        console.log("Current video index:", currentVideoIndex);
-    }, [currentVideoIndex]);
-
-    return (
-        <div className="py-8 lg:w-3/5 mx-auto">
-            <div className="gallery-container relative mb-12">
-                <div className="w-4/5 lg:w-full mx-auto relative">
-                    <div className="video-container" style={{ position: "relative", display: "flex", justifyContent: "center" }}>
-                        <video className="gallery-video" controls key={currentVideoIndex} style={{ width: "100%", height: "auto" }}>
-                            <source src={videos[currentVideoIndex]} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                        <div className="button-container" style={{ position: "absolute", top: "50%", transform: "translateY(-50%)", display: "flex", alignItems: "center", width: "100%", justifyContent: "space-between" }}>
-                            <button style={{ backgroundColor: "indigo", zIndex: 10 }} className="gallery-btn prev" onClick={prevVideo}>&#10094;</button>
-                            <button style={{ backgroundColor: "indigo", zIndex: 10 }} className="gallery-btn next" onClick={nextVideo}>&#10095;</button>
-                        </div>
+   return (
+    <div className="py-8 lg:w-3/5 mx-auto">
+        <div className="-container relative mb-12">
+            <div className="w-full relative">
+                <div className="video-container" style={{ position: "relative", maxWidth: "100%", overflow: "hidden" }}>
+                    <button className="gallery-btn prev" style={{ position: "absolute", left: "10px", top: "50%", transform: "translateY(-50%)", backgroundColor: "rgba(0, 0, 0, 0.5)", color: "white", border: "none", outline: "none", cursor: "pointer", fontSize: "24px", padding: "12px", borderRadius: "50%", zIndex: "1" }} onClick={prevVideo}>&#10094;</button>
+                    <div key={videoIds[currentVideoIndex]} className="video-wrapper" style={{ margin: '10px', maxWidth: "100%", width: "auto", height: "auto", paddingTop: "56.25%" }}>
+                        <YouTube videoId={videoIds[currentVideoIndex]} opts={opts} />
                     </div>
+                    <button className="gallery-btn next" style={{ position: "absolute", right: "10px", top: "50%", transform: "translateY(-50%)", backgroundColor: "rgba(0, 0, 0, 0.5)", color: "white", border: "none", outline: "none", cursor: "pointer", fontSize: "24px", padding: "12px", borderRadius: "50%", zIndex: "1" }} onClick={nextVideo}>&#10095;</button>
                 </div>
             </div>
         </div>
-    );
+    </div>
+);
 };
 export default Projects;
