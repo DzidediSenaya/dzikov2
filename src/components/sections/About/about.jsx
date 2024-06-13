@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../navbar/navbar';
 import Footer from '../../footer/footer';
-import { FaRegLightbulb, FaEye, FaUsers, FaHandshake, FaUserFriends, FaGlobe } from 'react-icons/fa';
+import { FaRegLightbulb, FaEye, FaUsers, FaHandshake, FaUserFriends, FaGlobe} from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 import profiles from './profiles';
 import Spinner from '../../spinner/spinner';
 import DPGImage from '../../../assets/images/DPG.webp';
 import LebeneImage from '../../../assets/images/Lebene.webp';
 import './about.css';
+
 
 const About = () => {
     const [showFullProfile, setShowFullProfile] = useState(Array(profiles.length).fill(false));
@@ -75,9 +78,9 @@ const About = () => {
             <div className="bg-sky-900 py-4"></div>
 
             <section id="mission" className="max-w-4xl mx-auto px-4 py-8 pt-56">
-                <h1 className="text-3xl font-bold mb-4 text-indigo-800">About DZIKO CENTRE FOR CLIMATE JUSTICE (DZIKO CCJ) {showIcon === 'lightbulb' && <FaRegLightbulb className="inline animate-bounce" />}</h1>
+                <h1 className="text-3xl font-bold mb-4 text-indigo-800">About DZIKO CENTRE FOR CLIMATE JUSTICE (DZIKO CCJ) {showIcon === 'lightbulb' && <FaRegLightbulb className="inline animate-pulse" />}</h1>
                 <div className="mb-8">
-                    <h2 className="text-2xl font-bold mb-2 text-indigo-800">Our Mission {showIcon === 'lightbulb' && <FaGlobe className="inline animate-bounce" />}</h2>
+                    <h2 className="text-2xl font-bold mb-2 text-indigo-800">Our Mission {showIcon === 'lightbulb' && <FaGlobe className="inline animate-pulse" />}</h2>
                     <p className="text-lg text-gray-700">
                         DZIKO CCJ was founded in January 2024 with a bold mission: to empower the next generation of
                         environmental leaders and activists. We believe that young people have the power to drive positive change in
@@ -138,13 +141,15 @@ const About = () => {
                             </div>
                         ))}
                         <div>
-                        <div className="max-w-4xl mx-auto px-4 py-8">
-                        <p id="volunteersCount" className="text-3xl font-bold text-gray-700">100+</p>
-                        <p className="text-lg text-gray-700">Volunteers Nationwide</p>
-                    </div>
                         </div>
                     </div>
                 </div>
+                <div className="relative max-w-4xl mx-auto px-4 py-8 bg-white rounded-lg overflow-hidden text-center">
+        <p id="volunteersCount" className="text-6xl font-bold text-indigo-800 animate-pulse">
+        <FontAwesomeIcon icon={faPeopleGroup} size="x" /> 100+
+        </p>
+        <p className="text-xl text-gray-800 mt-2 font-bold">Volunteers Nationwide</p>
+      </div>
             </section>
 
             <section id="partners" className="max-w-4xl mx-auto px-4 py-8">

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './projects.css';
 import Navbar from '../../navbar/navbar';
 import Footer from '../../footer/footer';
-import YouTube from 'react-youtube';
 import attentionGrabberImage1 from '../../../assets/images/ecologo.webp';
 import attentionGrabberImage2 from '../../../assets/images/ecologo2.webp';
 import projectImage1 from '../../../assets/images/1000143128.webp';
@@ -18,7 +17,7 @@ import projectImage11 from '../../../assets/images/IMG_6996-2.webp'
 import projectImage12 from '../../../assets/images/1000143195.webp'
 import projectImage13 from '../../../assets/images/1000143225.webp'
 import projectImage14 from '../../../assets/images/1717936595766-ggd1.webp'
-import projectImage15 from '../../../assets/images/1717936604418-ggd3.webp'
+import projectImage15 from '../../../assets/images/Screenshot_20240607_200100_WhatsApp_1_cropped.webp'
 import projectImage16 from '../../../assets/images/1717936604753-ggd4.webp'
 import projectImage17 from '../../../assets/images/1717936605183-ggd2.webp'
 import projectImage18 from '../../../assets/images/20240607_124510.webp'
@@ -29,6 +28,10 @@ import projectImage23 from '../../../assets/images/1000143196.webp'
 import projectImage24 from '../../../assets/images/1000143197.webp'
 import projectImage26 from '../../../assets/images/1000143216.webp'
 import projectImage27 from '../../../assets/images/1000143218.webp'
+import projectImage28 from '../../../assets/images/IMG-20240608-WA0107.webp'
+import projectImage29 from '../../../assets/images/IMG-20240607-WA0100.webp'
+import projectImage30 from '../../../assets/images/IMG-20240608-WA0133.webp'
+import projectImage31 from '../../../assets/images/IMG-20240607-WA0076.webp'
 
 const Projects = () => {
     const [showHomeImage1, setShowHomeImage1] = useState(true);
@@ -95,7 +98,6 @@ This team is campaigning for sustainable practices such as water conservation to
             <section className="max-w-3xl mx-auto py-4 sm:max-w-50 mx-5 px-0">
                 <div>
             <h5 className="text-3xl text-center font-bold sm:max-w-50 mx-5 px-04 ">Green Ghana Day Campaign</h5>  
-            <GGDProject />
             <h3 className="text-3xl font-bold mb-4 sm:max-w-50 mx-5 px-04">Celebrating a Successful Tree Planting Campaign</h3>
             <p className="mb-2 sm:max-w-50 mx-5 px-0">In the spirit of environmental stewardship and community engagement, the Dziko Centre for Climate Justice proudly joined hands with volunteers nationwide to commemorate Green Ghana Day 2024. This annual event, dedicated to reforestation and environmental conservation, saw unprecedented enthusiasm and commitment from individuals across Ghana.</p>
 
@@ -105,7 +107,7 @@ This team is campaigning for sustainable practices such as water conservation to
 
             <p className="mb-2 sm:max-w-50 mx-5 px-0">As we reflect on the success of Green Ghana Day 2024, we extend our heartfelt gratitude to every individual who contributed their time, energy, and passion to this noble cause. Your dedication and commitment have left an indelible mark on our environment and inspired countless others to join the fight for a greener Ghana.</p>.
 
-            <p className="mb-2 sm:max-w-50 mx-5 px-0">As we celebrate the achievements of Green Ghana Day, we will not rest on our laurels. Our work is far from over. Together, we will continue to nurture the seeds of change we've planted, cultivating a legacy of environmental stewardship and sustainability for generations to come.</p>
+            <p className="mb-12 sm:max-w-50 mx-5 px-0">As we celebrate the achievements of Green Ghana Day, we will not rest on our laurels. Our work is far from over. Together, we will continue to nurture the seeds of change we've planted, cultivating a legacy of environmental stewardship and sustainability for generations to come.</p>
             <h5 className="text-3xl font-bold sm:max-w-50 mx-5 px-04">Project Gallery</h5> 
             </div>
             </section>
@@ -171,7 +173,11 @@ const GGDGallery = () => {
         projectImage16,
         projectImage17,
         projectImage18,
-        projectImage19
+        projectImage19,
+        projectImage28,
+        projectImage29,
+        projectImage30,
+        projectImage31,
     ];
 
     const nextImage = () => {
@@ -194,53 +200,4 @@ return (
     </div>
 );
 }; 
-
-const GGDProject = () => {
-    const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-
-    const videoIds = [
-       "DXanqHluK6o",
-       "-RUOjLO1H6Y",
-        "p9U0NOKETsE",
-        "XB2SdwtPOJo",
-        "lJy-Jahr2go",
-        "6FIj3R1QIEQ",
-        "xzOIXdOu378",
-        "oCYB1Qx287Y",
-        "CI2Doh6cViM",
-        "e_aNo0rW5So",
-    ];
-
-    const opts = {
-        height: '390',
-        width: '640',
-        playerVars: {
-            autoplay: 1,
-        },
-    };
-
-    const nextVideo = () => {
-        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoIds.length);
-    };
-
-    const prevVideo = () => {
-        setCurrentVideoIndex((prevIndex) => (prevIndex - 1 + videoIds.length) % videoIds.length);
-    };
-
-   return (
-    <div className="py-8 lg:w-3/5 mx-auto">
-        <div className="-container relative mb-12">
-            <div className="w-full relative">
-                <div className="video-container" style={{ position: "relative", maxWidth: "100%", overflow: "hidden" }}>
-                    <button className="gallery-btn prev" style={{ position: "absolute", left: "10px", top: "50%", transform: "translateY(-50%)", backgroundColor: "rgba(0, 0, 0, 0.5)", color: "white", border: "none", outline: "none", cursor: "pointer", fontSize: "24px", padding: "12px", borderRadius: "50%", zIndex: "1" }} onClick={prevVideo}>&#10094;</button>
-                    <div key={videoIds[currentVideoIndex]} className="video-wrapper" style={{ margin: '10px', maxWidth: "100%", width: "auto", height: "auto", paddingTop: "56.25%" }}>
-                        <YouTube videoId={videoIds[currentVideoIndex]} opts={opts} />
-                    </div>
-                    <button className="gallery-btn next" style={{ position: "absolute", right: "10px", top: "50%", transform: "translateY(-50%)", backgroundColor: "rgba(0, 0, 0, 0.5)", color: "white", border: "none", outline: "none", cursor: "pointer", fontSize: "24px", padding: "12px", borderRadius: "50%", zIndex: "1" }} onClick={nextVideo}>&#10095;</button>
-                </div>
-            </div>
-        </div>
-    </div>
-);
-};
 export default Projects;
