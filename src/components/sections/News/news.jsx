@@ -4,12 +4,16 @@ import Footer from '../../footer/footer';
 import earthdayImage from '../../../assets/images/earth day.webp'; 
 import earthmonthImage from '../../../assets/images/dziko shirt.webp'; 
 import climatecrisisImage from '../../../assets/images/1000143174.webp'; 
-import climateeventImage from '../../../assets/images/1000143128.webp'; 
+import climateeventImage from '../../../assets/images/1000143128.webp';
+import yewImage from '../../../assets/images/yew.jpg';
 import GGDImage from '../../../assets/images/DZIKO 1.webp'; 
 import Spinner from '../../spinner/spinner';
+import { Helmet } from 'react-helmet';
+import './styles.css'; 
 
 const News = () => {
     const newsData = [
+
         {
             title: "🌍 #EarthDay Announcement 🌍",
             description: "Join us next month for the launch of our #TakeAction on Climate Change! Become a Dziko Climate Advocate! campaign, Empowering Communities, Sustaining Our Environment!",
@@ -32,6 +36,15 @@ const News = () => {
     ];
 
     const eventData = [
+        {
+            title: "Young Eco-warriors Upcycling Programme",
+            date: "2024-11-15",
+            location: "Pokuase, Accra-Ghana",
+            description: "The upcycling project, a product of the YALI Community Engagement Fund '24, empowered 50 individuals with hands-on skills to transform waste into valuable items, fostering environmental sustainability and entrepreneurship. Participants received intensive training on creating products such as tote bags from single-use plastics, promoting a circular economy. The program garnered significant media attention, with interviews on Channel 1 TV, Joy Prime, Joy News, Homebase TV, and Kessben TV, amplifying the project’s impact. The closing ceremony, covered by Homebase TV and Kessben TV, celebrated the trainees' accomplishments and emphasized the importance of community-driven solutions to environmental challenges.",
+            image: yewImage,
+            
+        },
+
         {
             title: "Green Ghana Day Campaign",
             date: "2024-05-28",
@@ -64,9 +77,20 @@ const News = () => {
 
     return (
         <div>
+                <Helmet>
+        <title>News - Dziko Centre for Climate Justice</title>
+        <meta name="description" content="Follow us for upcoming projects and initiatives." />
+        <meta property="og:title" content="News - Dziko Centre for Climate Justice" />
+        <meta property="og:description" content="Explore our upcoming projects and initiatives." />
+      </Helmet>
             <Navbar />
-            <div className="bg-indigo-900 py-4"></div>
+            <div className="bg-indigo-900 py-4 relative overflow-hidden"></div>
             <h2 className="text-3xl font-bold mb-6 mt-10 sm:max-w-50 mx-5 px-04 text-indigo-900 mt-32">Upcoming Events</h2>
+            <div className="overflow-hidden">
+            <p class="text-crawl text-xl">
+    Stay tuned for upcoming events! We will be updating this section with exciting new events soon.
+  </p></div>
+            <h2 className="text-3xl font-bold mb-6 mt-2 sm:max-w-50 mx-5 px-04 text-indigo-900 mt-32">Past Events</h2>
             <EventList eventData={eventData} />
             <h2 className="text-3xl font-bold mb-6 mt-10 sm:max-w-50 mx-5 px-04 text-indigo-900">Latest News</h2>
             <div className="news-list mx-5">

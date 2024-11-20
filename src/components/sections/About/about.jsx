@@ -9,7 +9,7 @@ import Spinner from '../../spinner/spinner';
 import DPGImage from '../../../assets/images/DPG.webp';
 import LebeneImage from '../../../assets/images/Lebene.webp';
 import './about.css';
-
+import { Helmet } from 'react-helmet';
 
 const About = () => {
     const [showFullProfile, setShowFullProfile] = useState(Array(profiles.length).fill(false));
@@ -74,6 +74,12 @@ const About = () => {
 
     return (
         <div>
+               <Helmet>
+        <title>About - Dziko Centre for Climate Justice</title>
+        <meta name="description" content="Learn more about our youth initiatives on climate change mitigation." />
+        <meta property="og:title" content="About - Dziko Centre for Climate Justice" />
+        <meta property="og:description" content="Learn about our vision, mission and dynamic team." />
+      </Helmet>
             <Navbar />
             <div className="bg-sky-900 py-4"></div>
 

@@ -32,6 +32,29 @@ import projectImage28 from '../../../assets/images/IMG-20240608-WA0107.webp'
 import projectImage29 from '../../../assets/images/IMG-20240607-WA0100.webp'
 import projectImage30 from '../../../assets/images/IMG-20240608-WA0133.webp'
 import projectImage31 from '../../../assets/images/IMG-20240607-WA0076.webp'
+import projectImage32 from '../../../assets/images/IMG_1972 (1).jpg'
+import projectImage33 from '../../../assets/images/IMG_3867 (1).jpg'
+import projectImage34 from '../../../assets/images/IMG_2031 (1).jpg'
+import projectImage35 from '../../../assets/images/IMG_2044 (1).jpg'
+import projectImage36 from '../../../assets/images/IMG_2078 (1).jpg'
+import projectImage37 from '../../../assets/images/IMG_2117 (1).jpg'
+import projectImage38 from '../../../assets/images/IMG_2159 (1).jpg'
+import projectImage39 from '../../../assets/images/IMG_2174 (1).jpg'
+import projectImage40 from '../../../assets/images/IMG_2185 (1).jpg'
+import projectImage41 from '../../../assets/images/IMG_2185 (1).jpg'
+import projectImage42 from '../../../assets/images/IMG_2213 (1).jpg'
+import projectImage43 from '../../../assets/images/IMG_2235-2 (1).jpg'
+import projectImage44 from '../../../assets/images/IMG_2241-2 (1).jpg'
+import projectImage45 from '../../../assets/images/IMG_2245-2 (1).jpg'
+import projectImage46 from '../../../assets/images/IMG_2253-2 (1).jpg'
+import projectImage47 from '../../../assets/images/IMG_2306-2 (1).jpg'
+import projectImage48 from '../../../assets/images/IMG_2397-2 (1).jpg'
+import projectImage49 from '../../../assets/images/IMG_3425 (1).jpg'
+import projectImage50 from '../../../assets/images/IMG_3539 (1).jpg'
+import projectImage51 from '../../../assets/images/IMG_3877 (2).jpg'
+import projectImage52 from '../../../assets/images/IMG_3688 (1).jpg'
+import projectImage53 from '../../../assets/images/IMG_3708 (1).jpg'
+import { Helmet } from 'react-helmet';
 
 const Projects = () => {
     const [showHomeImage1, setShowHomeImage1] = useState(true);
@@ -51,6 +74,12 @@ const Projects = () => {
 
     return (
         <div>
+                 <Helmet>
+        <title>Projects - Dziko Centre for Climate Justice</title>
+        <meta name="description" content="Learn more about our projects and initiatives." />
+        <meta property="og:title" content="Projects - Dziko Centre for Climate Justice" />
+        <meta property="og:description" content="Explore our projects and initiatives." />
+      </Helmet>
             <Navbar />
             <div className="bg-blue-700 py-4"></div>
             <section id="home" className="py-8 lg:w-3/5 mx-auto sm:w-60 px-6 mt-8"> {/* Set width to 90% on small screens */}
@@ -60,6 +89,47 @@ const Projects = () => {
                 <h2 className="text-3xl font-bold mb-6 sm:max-w-50 mx-5 px-04">Our Projects</h2>
                 <p className="mb-12 sm:max-w-50 mx-5 px-0">One of our flagship projects is the Young Eco Warriors Project, which aims to educate students about climate change and empower them to take action in their communities. Through this project, we partner with schools and organizations to deliver workshops, training sessions, and hands-on activities that inspire young people to become advocates for the planet.</p>
 
+
+                <h3 className="text-3xl font-bold mb-4 sm:max-w-50 mx-5 px-04">Young Eco-Warriors Upcycling Project</h3>
+                <h4 className="text-xl font-bold mb-6 sm:max-w-50 mx-5 px-04">From Plastic to Purpose: Ghana's Youth Turn Plastic Waste into Valuable Items</h4>
+                <section className="max-w-3xl mx-auto py-4 sm:max-w-50 mx-5 px-0">
+        
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">The upcycling project, a proud initiative under the YALI Community Engagement Fund 2024, was successfully executed in Pokuase, Ghana. The primary goal of this project was to equip 50 young individuals with the skills to address the plastic waste crisis while creating sustainable livelihood opportunities. By training participants to transform single-use plastics into valuable items like tote bags and aprons, the project sought to promote environmental sustainability and entrepreneurship.</p>
+
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">The program spanned a two week period from 4th to 15th November, 2024. The training sessions were held at MLC Fashion, Pokuase from 10:00 AM to 1:00 PM daily, providing a structured and practical learning environment. Participants were introduced to innovative upcycling techniques and guided through the process of creating functional and marketable products. This hands-on approach ensured that the trainees could immediately apply their new skills in real-world contexts.</p>
+
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">The closing ceremony, held at the Pokuase Palace, served as a celebration of the trainees' accomplishments and the project's overall success. It was a vibrant event that showcased the impressive creations of the participants and reinforced the importance of tackling plastic waste through community-driven solutions.</p>
+
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">Media engagement played a significant role in amplifying the project's impact. Interviews were conducted with Channel 1 TV, Joy Prime, Joy News, Homebase TV, and Kessben TV, helping to spotlight the initiative’s objectives and achievements. The closing ceremony itself was covered by Homebase TV and Kessben TV, further extending the project's reach and influence.</p>
+
+            <p className="mb-12 sm:max-w-50 mx-5 px-0">This upcycling project provided both practical skills to its participants, and contributed to raising awareness about the importance of sustainable waste management practices. By empowering youth to take active roles in combating the plastic waste crisis, the project laid the groundwork for long-term environmental and economic benefits.</p>
+            <h5 className="text-3xl font-bold sm:max-w-50 mx-5 px-04">Project Gallery</h5> 
+                </section>
+                <section>
+                <YEWGallery /> 
+            </section>
+
+
+            <h3 className="text-3xl font-bold mb-4 sm:max-w-50 mx-5 px-04">Green Ghana Day Campaign</h3>
+                <h4 className="text-xl font-bold mb-6 sm:max-w-50 mx-5 px-04">Celebrating a Successful Tree Planting Campaign</h4>
+            <section className="max-w-3xl mx-auto py-4 sm:max-w-50 mx-5 px-0">
+        
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">In the spirit of environmental stewardship and community engagement, the Dziko Centre for Climate Justice proudly joined hands with volunteers nationwide to commemorate Green Ghana Day 2024. This annual event, dedicated to reforestation and environmental conservation, saw unprecedented enthusiasm and commitment from individuals across Ghana.</p>
+
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">With a collective vision of fostering a greener and more sustainable future, our team embarked on an ambitious mission: to plant over 10,000 trees nationwide. Armed with our tools and unwavering determination, volunteers from diverse backgrounds converged to contribute to Ghana's reforestation efforts.</p>
+
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">From bustling urban centers to remote communities, the spirit of Green Ghana Day reverberated across the nation. Volunteers, young and old, urban dwellers and rural residents, came together as one cohesive force, united by a common purpose: to replenish our forests, protect our biodiversity, and combat climate change.</p>
+
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">As we reflect on the success of Green Ghana Day 2024, we extend our heartfelt gratitude to every individual who contributed their time, energy, and passion to this noble cause. Your dedication and commitment have left an indelible mark on our environment and inspired countless others to join the fight for a greener Ghana.</p>.
+
+            <p className="mb-12 sm:max-w-50 mx-5 px-0">As we celebrate the achievements of Green Ghana Day, we will not rest on our laurels. Our work is far from over. Together, we will continue to nurture the seeds of change we've planted, cultivating a legacy of environmental stewardship and sustainability for generations to come.</p>
+
+            <h5 className="text-3xl font-bold sm:max-w-50 mx-5 px-04">Project Gallery</h5> 
+                </section>
+                <section>
+                <GGDGallery /> 
+            </section>
+        
                 <h3 className="text-3xl font-bold mb-4 sm:max-w-50 mx-5 px-04">Our Climate Change Workshop at the Divine Grace School in Oyarifa, Accra</h3>
                 <h4 className="text-xl font-bold mb-6 sm:max-w-50 mx-5 px-04">Theme: Rallying Youth for Climate Action </h4>
 
@@ -94,25 +164,6 @@ This team is campaigning for sustainable practices such as water conservation to
                 </section>
                 <section>
                 <ProjectGallery /> 
-            </section>
-            <section className="max-w-3xl mx-auto py-4 sm:max-w-50 mx-5 px-0">
-                <div>
-            <h5 className="text-3xl text-center font-bold sm:max-w-50 mx-5 px-04 ">Green Ghana Day Campaign</h5>  
-            <h3 className="text-3xl font-bold mb-4 sm:max-w-50 mx-5 px-04">Celebrating a Successful Tree Planting Campaign</h3>
-            <p className="mb-2 sm:max-w-50 mx-5 px-0">In the spirit of environmental stewardship and community engagement, the Dziko Centre for Climate Justice proudly joined hands with volunteers nationwide to commemorate Green Ghana Day 2024. This annual event, dedicated to reforestation and environmental conservation, saw unprecedented enthusiasm and commitment from individuals across Ghana.</p>
-
-            <p className="mb-2 sm:max-w-50 mx-5 px-0">With a collective vision of fostering a greener and more sustainable future, our team embarked on an ambitious mission: to plant over 10,000 trees nationwide. Armed with our tools and unwavering determination, volunteers from diverse backgrounds converged to contribute to Ghana's reforestation efforts.</p>
-
-            <p className="mb-2 sm:max-w-50 mx-5 px-0">From bustling urban centers to remote communities, the spirit of Green Ghana Day reverberated across the nation. Volunteers, young and old, urban dwellers and rural residents, came together as one cohesive force, united by a common purpose: to replenish our forests, protect our biodiversity, and combat climate change.</p>
-
-            <p className="mb-2 sm:max-w-50 mx-5 px-0">As we reflect on the success of Green Ghana Day 2024, we extend our heartfelt gratitude to every individual who contributed their time, energy, and passion to this noble cause. Your dedication and commitment have left an indelible mark on our environment and inspired countless others to join the fight for a greener Ghana.</p>.
-
-            <p className="mb-12 sm:max-w-50 mx-5 px-0">As we celebrate the achievements of Green Ghana Day, we will not rest on our laurels. Our work is far from over. Together, we will continue to nurture the seeds of change we've planted, cultivating a legacy of environmental stewardship and sustainability for generations to come.</p>
-            <h5 className="text-3xl font-bold sm:max-w-50 mx-5 px-04">Project Gallery</h5> 
-            </div>
-            </section>
-            <section>
-                <GGDGallery /> 
             </section>
             <Footer />
         </div>
@@ -178,6 +229,54 @@ const GGDGallery = () => {
         projectImage29,
         projectImage30,
         projectImage31,
+    ];
+
+    const nextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
+    const prevImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
+return (
+    <div className="py-8 lg:w-3/5 mx-auto"> {/* Set width to 90% on small screens */}
+        <div className="gallery-container relative mb-12">
+            <div />
+            <div className="w-4/5 lg:w-full mx-auto flex items-center justify-between"> {/* Set width to 80% on larger screens */}
+                <button style={{ margin: "0", backgroundColor: "indigo"}} className="gallery-btn prev sm:ml-0" onClick={prevImage}>&#10094;</button>
+                <img className="gallery-img" src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
+                <button style={{ margin: "0", backgroundColor: "indigo" }} className="gallery-btn next sm:mr-0" onClick={nextImage}>&#10095;</button>
+            </div>
+        </div>
+    </div>
+);
+}
+
+const YEWGallery = () => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const images = [
+        projectImage32,
+        projectImage33,
+        projectImage34,
+        projectImage35,
+        projectImage36,
+        projectImage37,
+        projectImage38,
+        projectImage39,
+        projectImage40,
+        projectImage41,
+        projectImage42,
+        projectImage43,
+        projectImage44,
+        projectImage45,
+        projectImage46,
+        projectImage47,
+        projectImage48,
+        projectImage49,
+        projectImage50,
+        projectImage51,
+        projectImage52,
+        projectImage53,
     ];
 
     const nextImage = () => {

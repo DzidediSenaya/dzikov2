@@ -4,6 +4,7 @@ import Navbar from "../../navbar/navbar";
 import Footer from "../../footer/footer";
 import { FaHandHolding, FaDonate } from 'react-icons/fa';
 import { useEffect } from "react";
+import { Helmet } from 'react-helmet';
 
 const Support = () => {
 
@@ -49,6 +50,12 @@ const Support = () => {
 
     return (
         <div>
+                  <Helmet>
+        <title>Support - Dziko Centre for Climate Justice</title>
+        <meta name="description" content="Support our projects and initiatives by donating or volunteering." />
+        <meta property="og:title" content="Support - Dziko Centre for Climate Justice" />
+        <meta property="og:description" content="Here, you can support our projects and initiatives." />
+      </Helmet>
             <Navbar />
             <div className="bg-indigo-900 py-4 "></div>
             <section className="py-10" style={{ padding: "0 20px" }}>

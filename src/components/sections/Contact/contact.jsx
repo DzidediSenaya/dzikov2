@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import Navbar from '../../navbar/navbar';
 import Footer from '../../footer/footer';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 const ContactForm = () => {
 
@@ -35,6 +36,12 @@ const ContactForm = () => {
 
     return (
         <div>
+              <Helmet>
+        <title>Contact - Dziko Centre for Climate Justice</title>
+        <meta name="description" content="Contact Dziko CCJ for more enquiries." />
+        <meta property="og:title" content="Contact - Dziko Centre for Climate Justice" />
+        <meta property="og:description" content="Need help, or have question? Contact us." />
+      </Helmet>
             <Navbar />
             <div className="bg-indigo-900 py-4 pt-24"></div>
             <section id="home" className="max-w-3xl mx-auto py-8">

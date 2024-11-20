@@ -9,9 +9,10 @@ import image1 from '../../../assets/images/image1.webp';
 import image2 from '../../../assets/images/1717936604753-ggd4.webp';
 import image3 from '../../../assets/images/1717936605183-ggd2.webp';
 import { FaInfoCircle, FaHandsHelping, FaEnvelope } from 'react-icons/fa';
-import image5 from '../../../assets/images/earth day.webp';
-import image6 from '../../../assets/images/dziko shirt.webp';
-import image4 from '../../../assets/images/IMG-20240530-WA0010.webp';
+import image5 from '../../../assets/images/IMG-20240530-WA0010.webp';
+import image6 from '../../../assets/images/earth day.webp';
+import image4 from '../../../assets/images/yew.jpg';
+import { Helmet } from 'react-helmet';
 
 
 export default function Home() {
@@ -42,7 +43,7 @@ export default function Home() {
   }, [autoRotate]); // Depend on autoRotate state
 
   const images = [image1, image2, image3, image4, image5, image6]; 
-  const newsTitles = ["1", "2", "3", "Green Ghana Day Campaign","Earth Day Announcement", "Earth Month Campaign"];
+  const newsTitles = ["1", "2", "3", "Young Eco-Warriors Upcycling Project","Green Ghana Day Campaign","Earth Day Announcement"];
 
   const changeImage = (index) => {
     setCurrentImage(index);
@@ -105,6 +106,14 @@ if (loading) {
 
   return (
     <div>
+       <Helmet>
+        <title>Home - Dziko Centre for Climate Justice</title>
+        <meta name="description" content="Welcome to the Dziko Centre for Climate Justice. Discover more..." />
+        <meta property="og:title" content="Home - Dziko Centre for Climate Justice" />
+        <meta property="og:description" content="Learn about our efforts in climate education and initiatives.We empower young people to take charge in mitigating the effects of climate change,
+
+and are committed to excellence and accountability in implementation." />
+      </Helmet>
       <Navbar />
       <div className="bg-indigo-800 py-4"></div>
 

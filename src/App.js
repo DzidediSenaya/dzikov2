@@ -6,7 +6,7 @@ import Projects from './components/sections/Projects/projects';
 import Support from './components/sections/Support/support';
 import Contact from './components/sections/Contact/contact';
 import News from './components/sections/News/news';
-import './index.css'
+import './index.css';
 
 function App() {
   return (

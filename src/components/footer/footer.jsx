@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaFacebook, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram, FaTiktok, FaTwitter} from 'react-icons/fa';
 import './footer.css';
 
 const Footer = () => {
@@ -28,6 +28,15 @@ const Footer = () => {
                     </a>
                     <a href=" https://www.youtube.com/@DzikoCCJ" target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-200 ml-4">
                         <FaYoutube size={28} />
+                    </a>
+                    <a href="https://x.com/dziko_ccj?s=11&t=uyxMr0Uh8Yrc70I0xwZuvQ" target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-200 ml-4">
+                        <FaTwitter size={28} />
+                    </a>
+                    <a href="https://www.instagram.com/_dzikoccj?igsh=MTFpOHc3ZGhqNmNiaQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-200 ml-4">
+                        <FaInstagram size={28} />
+                    </a>
+                    <a href="https://www.tiktok.com/@dziko.ccj?_t=8nSRe4bsuQw&_r=1" target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-200 ml-4">
+                        <FaTiktok size={28} />
                     </a>
                 </div>
                 {/* Contact Section */}
