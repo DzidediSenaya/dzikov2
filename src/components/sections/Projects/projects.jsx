@@ -120,7 +120,7 @@ const Projects = () => {
 
             <p className="mb-2 sm:max-w-50 mx-5 px-0">From bustling urban centers to remote communities, the spirit of Green Ghana Day reverberated across the nation. Volunteers, young and old, urban dwellers and rural residents, came together as one cohesive force, united by a common purpose: to replenish our forests, protect our biodiversity, and combat climate change.</p>
 
-            <p className="mb-2 sm:max-w-50 mx-5 px-0">As we reflect on the success of Green Ghana Day 2024, we extend our heartfelt gratitude to every individual who contributed their time, energy, and passion to this noble cause. Your dedication and commitment have left an indelible mark on our environment and inspired countless others to join the fight for a greener Ghana.</p>.
+            <p className="mb-2 sm:max-w-50 mx-5 px-0">As we reflect on the success of Green Ghana Day 2024, we extend our heartfelt gratitude to every individual who contributed their time, energy, and passion to this noble cause. Your dedication and commitment have left an indelible mark on our environment and inspired countless others to join the fight for a greener Ghana.</p>
 
             <p className="mb-12 sm:max-w-50 mx-5 px-0">As we celebrate the achievements of Green Ghana Day, we will not rest on our laurels. Our work is far from over. Together, we will continue to nurture the seeds of change we've planted, cultivating a legacy of environmental stewardship and sustainability for generations to come.</p>
 
@@ -240,15 +240,15 @@ const GGDGallery = () => {
     };
 return (
     <div className="py-8 lg:w-3/5 mx-auto"> {/* Set width to 90% on small screens */}
-        <div className="gallery-container relative mb-12">
-            <div />
-            <div className="w-4/5 lg:w-full mx-auto flex items-center justify-between"> {/* Set width to 80% on larger screens */}
-                <button style={{ margin: "0", backgroundColor: "indigo"}} className="gallery-btn prev sm:ml-0" onClick={prevImage}>&#10094;</button>
-                <img className="gallery-img" src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
-                <button style={{ margin: "0", backgroundColor: "indigo" }} className="gallery-btn next sm:mr-0" onClick={nextImage}>&#10095;</button>
-            </div>
+    <div className="gallery-container relative mb-12">
+        <div />
+        <div className="w-4/5 lg:w-full mx-auto flex items-center justify-between"> {/* Set width to 80% on larger screens */}
+            <button style={{ margin: "0", backgroundColor: "indigo"}} className="gallery-btn prev sm:ml-0" onClick={prevImage}>&#10094;</button>
+            <img className="gallery-img" src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
+            <button style={{ margin: "0", backgroundColor: "indigo" }} className="gallery-btn next sm:mr-0" onClick={nextImage}>&#10095;</button>
         </div>
     </div>
+</div>
 );
 }
 
@@ -288,15 +288,15 @@ const YEWGallery = () => {
     };
 return (
     <div className="py-8 lg:w-3/5 mx-auto"> {/* Set width to 90% on small screens */}
-        <div className="gallery-container relative mb-12">
-            <div />
-            <div className="w-4/5 lg:w-full mx-auto flex items-center justify-between"> {/* Set width to 80% on larger screens */}
-                <button style={{ margin: "0", backgroundColor: "indigo"}} className="gallery-btn prev sm:ml-0" onClick={prevImage}>&#10094;</button>
-                <img className="gallery-img" src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
-                <button style={{ margin: "0", backgroundColor: "indigo" }} className="gallery-btn next sm:mr-0" onClick={nextImage}>&#10095;</button>
-            </div>
+    <div className="gallery-container relative mb-12">
+        <div />
+        <div className="w-4/5 lg:w-full mx-auto flex items-center justify-between"> {/* Set width to 80% on larger screens */}
+            <button style={{ margin: "0", backgroundColor: "indigo"}} className="gallery-btn prev sm:ml-0" onClick={prevImage}>&#10094;</button>
+            <img className="gallery-img" src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
+            <button style={{ margin: "0", backgroundColor: "indigo" }} className="gallery-btn next sm:mr-0" onClick={nextImage}>&#10095;</button>
         </div>
     </div>
+</div>
 );
 }; 
 export default Projects;

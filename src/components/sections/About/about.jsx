@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 import profiles from './profiles';
 import Spinner from '../../spinner/spinner';
-import DPGImage from '../../../assets/images/DPG.webp';
-import LebeneImage from '../../../assets/images/Lebene.webp';
+import DPGImage from '../../../assets/images/dk.png';
+import LebeneImage from '../../../assets/images/Lebene.png';
 import './about.css';
 import { Helmet } from 'react-helmet';
 
